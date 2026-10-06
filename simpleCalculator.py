@@ -6,20 +6,18 @@ def sub(*args):
     result = args[0]
     for num in args[1:]:
         result -=num
-    
+
     return result
 
 def divide(*args):
     result = args[0]
 
     for num in args[1:]:
-
         if num == 0 :
-            print("division by zero is not allowed")
+            print("Division by zero is not allowed")
             return
         else:
             result /= num
-    
     return result
 
 def multiply(*args):
@@ -58,7 +56,7 @@ def main():
             continue
 
         numbers = input("Enter numbers separated by spaces: ")
-
+    
         try:
             numbers = [float(num) for num in numbers.split()]
 

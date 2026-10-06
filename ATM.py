@@ -22,7 +22,6 @@ def showOption():
 
 
 def main():
-
     balance = 10000
     while True:
 
@@ -41,13 +40,12 @@ def main():
             print("Invalid choice")
 
         if choice == "4":
-            print("goodbye")
+            print("Goodbye")
             break
-
         if choice == "1":
-            print("=======loading======")
-            print(check_balance(balance))
-            showOption()
+            print("=======Loading======")
+            print(check_balance(balance), "\n"*2)
+
         if choice == "2":
             print("=======loading======")
 
